@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한 사람이 변화되면 세상이 변화된다 | 글로컬브릿지 5부작 시리즈 예고편</title>
+    
+    <!-- 카카오톡 미리보기 메타 태그 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="한 사람이 변화되면 세상이 변화된다">
+    <meta property="og:description" content="세리 마태에서 제자 마태로: 글로컬 인재 변화의 기적. 5부작 시리즈 설교 예고편">
+    <meta property="og:image" content="https://i.imgur.com/placeholder-sermon.jpg">
+    <meta property="og:url" content="https://glocalbridge.org/sermon-preview">
+    
+    <!-- 트위터 카드 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="한 사람이 변화되면 세상이 변화된다">
+    <meta name="twitter:description" content="세리 마태에서 제자 마태로: 글로컬 인재 변화의 기적">
+    <meta name="twitter:image" content="https://i.imgur.com/placeholder-sermon.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        /* 히어로 섹션 */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .series-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .scripture {
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+
+        /* 네비게이션 */
+        .nav {
+            background: #34495e;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* 섹션 공통 스타일 */
+        section {
+            padding: 60px 40px;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #34495e;
+            margin: 40px 0 20px 0;
+        }
+
+        h4 {
+            font-size: 22px;
+            color: #7f8c8d;
+            margin: 30px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        /* 인용문 */
+        blockquote {
+            border-left: 5px solid #3498db;
+            padding: 20px 30px;
+            margin: 30px 0;
+            background: #ecf0f1;
+            font-size: 20px;
+            font-style: italic;
+            border-radius: 0 10px 10px 0;
+        }
+
+        /* 강조 박스 */
+        .emphasis-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .emphasis-box h3 {
+            color: white;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 15px;
+        }
+
+        /* 리스트 */
+        ul, ol {
+            margin: 20px 0 20px 40px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        /* 통계 카드 */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+
+        /* 시리즈 타임라인 */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 30px;
+            margin: 30px 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #3498db;
+        }
+
+        .timeline-number {
+            position: absolute;
+            left: -25px;
+            top: 30px;
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .timeline-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .timeline-keyword {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        /* CTA 버튼 */
+        .cta-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #f5576c;
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* 푸터 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        /* 링크 카드 호버 효과 */
+        a[style*="background: rgba(255,255,255,0.95)"]:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* 반응형 */
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            h2 { font-size: 28px; }
+            h3 { font-size: 22px; }
+            .hero { padding: 40px 20px; }
+            section { padding: 40px 20px; }
+            .nav { padding: 15px 20px; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 히어로 섹션 -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="series-badge">5부작 시리즈 설교 예고편</div>
+                <h1>한 사람이 변화되면<br>세상이 변화된다</h1>
+                <div class="subtitle">세리 마태에서 제자 마태로: 글로컬 인재 변화의 기적</div>
+                <div class="scripture">
+                    "예수께서 그 곳을 떠나 지나가시다가 마태라 하는 사람이<br>
+                    세관에 앉아 있는 것을 보시고 이르시되<br>
+                    나를 따르라 하시니 일어나 따르니라" - 마태복음 9:9
+                </div>
+            </div>
+        </div>
+
+        <!-- 네비게이션 -->
+        <nav class="nav">
+            <a href="#intro">서론</a>
+            <a href="#question">핵심 질문</a>
+            <a href="#matthew">마태의 이야기</a>
+            <a href="#modern">현대의 마태들</a>
+            <a href="#series">5부작 시리즈</a>
+            <a href="#action">실천 과제</a>
+        </nav>
+
+        <!-- 서론 -->
+        <section id="intro">
+            <h2>서론: 우리 시대의 가장 강력한 질문</h2>
+            
+            <p><strong>존경하는 사역자 여러분,</strong></p>
+            
+            <p>오늘 이 시간, 우리는 함께 한 가지 질문을 던지려 합니다. 이것은 단순한 질문이 아닙니다. 이것은 우리 사역의 본질을 결정짓는 질문입니다. 이것은 글로컬브릿지 사역이 왜 중요한지를 설명하는 질문입니다.</p>
+
+            <blockquote>
+                "한 사람이 변화되면 무슨 일이 일어날까요?"
+            </blockquote>
+
+            <p>어떤 분들은 이렇게 대답하실지 모릅니다:</p>
+            <ul>
+                <li>"그 사람의 인생이 좀 나아지겠죠."</li>
+                <li>"그 사람 주변 몇 명이 영향을 받겠죠."</li>
+                <li>"그래도 세상은 별로 안 바뀔 거예요."</li>
+            </ul>
+
+            <p>그러나 오늘 우리는 함께 발견하게 될 것입니다. <strong>한 사람의 변화가 어떻게 국가를 살리고, 산업을 재편하고, 형제 국가를 만들고, 세계 표준이 되는지</strong>를 말입니다.</p>
+
+            <div class="emphasis-box">
+                <h3>오늘의 여정</h3>
+                <p>오늘 우리는 30분간 놀라운 여정을 떠납니다. 마태복음 9장의 세리 마태에서 시작하여, 21세기 한국의 글로컬 인재들이 어떻게 세상을 변화시키고 있는지를 목격하게 될 것입니다.</p>
+                <p>그리고 마지막에는, <strong>다음 5주간 함께할 5부작 시리즈 설교의 예고편</strong>을 보게 될 것입니다.</p>
+            </div>
+
+            <p>자, 이제 시작하겠습니다.</p>
+        </section>
+
+        <!-- 핵심 질문 -->
+        <section id="question">
+            <h2>핵심 질문: 한 사람이 정말 세상을 바꿀 수 있을까?</h2>
+
+            <h3>회의론자들의 목소리</h3>
+            <p>우리가 이주민 사역을 이야기할 때, 종종 이런 질문들을 듣습니다:</p>
+            
+            <ul>
+                <li><strong>"이주민 한 명 도와서 뭐가 달라지나요?"</strong></li>
+                <li><strong>"우리 교회도 재정이 부족한데, 왜 이주민까지 도와야 하나요?"</strong></li>
+                <li><strong>"그들은 몇 년 후 떠날 텐데, 투자할 가치가 있나요?"</strong></li>
+            </ul>
+
+            <p>이것은 정당한 질문들입니다. 그러나 이 질문들 뒤에는 더 깊은 가정이 숨어 있습니다:</p>
+
+            <div class="emphasis-box">
+                <h3>잘못된 가정</h3>
+                <ol>
+                    <li><strong>개인의 변화는 작은 일이다</strong> → 세상을 바꾸려면 큰 조직, 많은 돈이 필요하다</li>
+                    <li><strong>이주민은 도움이 필요한 대상이다</strong> → 그들은 주는 자가 아니라 받는 자다</li>
+                    <li><strong>지역 사역은 지역에 머문다</strong> → 글로벌 임팩트는 글로벌 조직만 만든다</li>
+                </ol>
+            </div>
+
+            <p>그러나 성경은 이 모든 가정을 뒤집습니다. 그리고 21세기 현실도 이 가정들을 산산조각 냅니다.</p>
+
+            <h3>성경의 대답</h3>
+            <blockquote>
+                "겨자씨 한 알이 땅에 심기면 땅 위의 모든 씨보다 작은 것이로되<br>
+                심긴 후에는 자라서 모든 풀보다 커지며 큰 가지를 내나니<br>
+                공중의 새들이 그 그늘에 깃들일 만큼 되느니라" - 마가복음 4:31-32
+            </blockquote>
+
+            <p>예수님께서는 이렇게 말씀하십니다: <strong>"작은 것을 무시하지 마라. 하나님 나라는 작은 씨앗에서 시작된다."</strong></p>
+        </section>
+
+        <!-- 마태의 이야기 -->
+        <section id="matthew">
+            <h2>마태의 이야기: 한 사람의 변화가 만든 기적</h2>
+
+            <h3>1부: 세관에 앉은 마태 - 세상이 버린 자리</h3>
+            
+            <p>마태복음 9장 9절을 보십시오:</p>
+            <blockquote>
+                "예수께서 그 곳을 떠나 지나가시다가 마태라 하는 사람이 세관에 앉아 있는 것을 보시고"
+            </blockquote>
+
+            <p>마태는 세리였습니다. 당시 세리는:</p>
+            <ul>
+                <li>로마 제국을 위해 동족의 세금을 거두는 <strong>배신자</strong></li>
+                <li>회당에 들어갈 수 없는 <strong>죄인</strong></li>
+                <li>친구 한 명 없는 <strong>고립된 사람</strong></li>
+            </ul>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">💰</div>
+                    <div class="stat-label">돈은 많았지만</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">친구는 없었습니다</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">❌</div>
+                    <div class="stat-label">소속감도 없었습니다</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">😔</div>
+                    <div class="stat-label">외로움 속에 살았습니다</div>
+                </div>
+            </div>
+
+            <h3>2부: 예수님의 시선 - 하나님 나라의 관점</h3>
+            
+            <p>그런데 예수님께서는 마태를 다르게 보셨습니다:</p>
+            <ul>
+                <li>사람들은 보았습니다: <strong>"저 나쁜 사람, 배신자"</strong></li>
+                <li>예수님은 보셨습니다: <strong>"마태, 불쌍한 사람"</strong> (누가복음 16:7 참조)</li>
+            </ul>
+
+            <p>이것이 바로 <strong>하나님 나라의 관점</strong>입니다. 세상이 버린 자리에서 하나님은 보석을 발견하십니다.</p>
+
+            <h3>3부: "나를 따르라" - 정체성의 변화</h3>
+            
+            <blockquote>
+                "이르시되 나를 따르라 하시니 일어나 따르니라"
+            </blockquote>
+
+            <p>이 짧은 구절 안에 폭발적인 변화가 담겨 있습니다:</p>
+            
+            <ol>
+                <li><strong>정체성의 변화</strong>: "세리 마태" → "제자 마태"</li>
+                <li><strong>소속의 변화</strong>: 로마 → 하나님 나라</li>
+                <li><strong>목적의 변화</strong>: 돈을 위한 삶 → 사람을 위한 삶</li>
+            </ol>
+
+            <h3>4부: 마태의 유산 - 2000년을 넘은 영향력</h3>
+
+            <div class="emphasis-box">
+                <h3>마태가 버린 것 vs. 얻은 것</h3>
+                <h4>버린 것:</h4>
+                <ul>
+                    <li>매일 들어오는 돈</li>
+                    <li>안정적인 직업</li>
+                    <li>편한 생활</li>
+                </ul>
+                <h4>얻은 것:</h4>
+                <ul>
+                    <li>예수님의 제자가 됨</li>
+                    <li>12명의 진정한 친구</li>
+                    <li>새로운 정체성: "예수님의 제자"</li>
+                    <li>마태복음 저자 (2000년 후에도 읽히는 유산)</li>
+                    <li>외로움이 아닌 진정한 행복</li>
+                </ul>
+            </div>
+
+            <p>여기서 우리가 놓치지 말아야 할 핵심이 있습니다:</p>
+            
+            <blockquote>
+                <strong>마태 한 사람의 변화가 마태복음이라는 세계적 유산을 만들었습니다.</strong><br>
+                오늘날 전 세계 20억 기독교인이 마태복음을 읽습니다.
+            </blockquote>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">한 사람 (마태)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">제자들</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2000년</div>
+                    <div class="stat-label">지속되는 영향력</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20억+</div>
+                    <div class="stat-label">마태복음 독자</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 현대의 마태들 -->
+        <section id="modern">
+            <h2>현대의 마태들: 한 사람이 세상을 바꾼 5가지 증거</h2>
+
+            <p>혹시 이렇게 생각하실 수 있습니다: "마태 이야기는 성경이니까 특별한 거 아닌가요? 오늘날에도 한 사람이 정말 세상을 바꿀 수 있나요?"</p>
+
+            <p><strong>대답은 "예"입니다.</strong> 그리고 증거는 우리 주변에 있습니다. 특히 한국이라는 작은 나라에서 배출된 인재들이 어떻게 세계를 변화시키고 있는지 보십시오.</p>
+
+            <h3>증거 1: 권순영 박사 - 사막을 경작지로 바꾼 한 사람</h3>
+            
+            <!-- 이미지 섹션 -->
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center;">
+                <div style="background: #e9ecef; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px; margin-bottom: 15px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 80px; margin-bottom: 10px;">🌾</div>
+                        <p style="color: #6c757d; font-size: 14px; margin: 0;">아프가니스탄 콩밭</p>
+                        <p style="color: #6c757d; font-size: 12px; margin: 5px 0 0 0;">사막에서 자라는 희망의 콩</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>상황:</strong> 아프가니스탄은 국토의 80% 이상이 사막이었고, 만성적인 영양실조에 시달리고 있었습니다.</p>
+            
+            <p><strong>한 사람의 등장:</strong> 권순영 박사가 콩 재배 기술을 들고 갔습니다. 사람들은 회의적이었습니다. "사막에서 콩이 자랄 리 없다."</p>
+            
+            <p><strong>변화:</strong></p>
+            <ul>
+                <li>50도 사막에서 직접 실험을 반복</li>
+                <li>불모지에서 콩이 자라기 시작</li>
+                <li>아프간 정부가 99년간 3만 7천 헥타르 농지를 무상 임대</li>
+                <li>34개 주 중 절반 이상으로 확산</li>
+                <li>2030년 목표: 연간 30만 톤 생산</li>
+            </ul>
+
+            <p><strong>가장 놀라운 순간:</strong> 2021년, 탈레반이 재집권했을 때 모든 외국인에게 철수 명령이 떨어졌습니다. 그러나 탈레반은 권순영 박사에게만은 "남아 달라"고 부탁했습니다. 왜냐하면 그의 기술 없이는 아프가니스탄 국민이 굶어 죽을 수 있었기 때문입니다.</p>
+
+            <!-- 관련 기사 링크 카드 -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 30px 0;">
+                <h4 style="color: white; margin: 0 0 15px 0; font-size: 18px;">📰 관련 기사 더보기</h4>
+                <div style="display: grid; gap: 10px;">
+                    <a href="http://www.dt.co.kr/contents.html?article_no=2021112502109919607007" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block; transition: transform 0.3s;">
+                        <strong style="color: #667eea;">디지털타임스</strong><br>
+                        <span style="font-size: 14px;">"아프간 콩박사로 통하죠… 탈레반도 우리활동 지지"</span>
+                    </a>
+                    <a href="https://www.hankyung.com/article/2021112898881" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #667eea;">한국경제</strong><br>
+                        <span style="font-size: 14px;">아산봉사상 권순영 NEI 대표, 영양실조 신생아들 살린 아프간의 콩박사</span>
+                    </a>
+                    <a href="http://www.kowsc.org/news/articleView.html?idxno=14892" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #667eea;">KOWSC</strong><br>
+                        <span style="font-size: 14px;">[숨은 챔피언들] 영양의 씨앗을 심은 사람, 권순영 박사</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="emphasis-box">
+                <h3>교훈</h3>
+                <p><strong>한 사람의 기술이 국가를 살렸습니다.</strong></p>
+                <p>권순영 박사는 단순한 농업 전문가가 아니었습니다. 그는 아프가니스탄의 생존 기반을 바꾼 <strong>국가 구원자</strong>였습니다.</p>
+            </div>
+
+            <h3>증거 2: 한국 조선 기술 - 미국 연방법까지 바꾼 탁월성</h3>
+            
+            <!-- 이미지 섹션 -->
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center;">
+                <div style="background: #e9ecef; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px; margin-bottom: 15px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 80px; margin-bottom: 10px;">🚢</div>
+                        <p style="color: #6c757d; font-size: 14px; margin: 0;">한국 조선소</p>
+                        <p style="color: #6c757d; font-size: 12px; margin: 5px 0 0 0;">세계 2위 조선 강국의 기술력</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>상황:</strong> 미국은 북극 항로 패권 경쟁에서 러시아에게 밀리고 있었습니다. 문제는 쇄빙선이었습니다.</p>
+            
+            <p><strong>한 나라의 기술:</strong> 한국의 조선 기술이 해결책으로 떠올랐습니다. 쇄빙선은 단순히 배를 만드는 기술이 아닙니다. 이것은 '얼음을 부수며 항해하는' 복합공학입니다.</p>
+            
+            <p><strong>변화:</strong></p>
+            <ul>
+                <li>미국은 자국 조선 보호법(Jones Act)을 철옹성처럼 지켜왔습니다</li>
+                <li>그러나 한국 기술이 필요하자 <strong>연방법을 유연화</strong>하기로 결정</li>
+                <li>핀란드(설계) + 한국(건조) = 미국 북극 방어 전략</li>
+            </ul>
+
+            <blockquote>
+                <strong>"한국 기술이 없으면 북극을 지킬 수 없다"</strong> - 미국 정부의 판단
+            </blockquote>
+
+            <!-- 관련 기사 링크 카드 -->
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 25px; border-radius: 15px; margin: 30px 0;">
+                <h4 style="color: white; margin: 0 0 15px 0; font-size: 18px;">📰 관련 기사 더보기</h4>
+                <div style="display: grid; gap: 10px;">
+                    <a href="https://weekly.khan.co.kr/article/202508011417001" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #f5576c;">주간경향</strong><br>
+                        <span style="font-size: 14px;">미국은 왜 조선업 재건에 매달리나</span>
+                    </a>
+                    <a href="https://www.lexology.com/library/detail.aspx?g=78361a1f-3c5a-4f76-bd6c-50d43da1b07c" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #f5576c;">Lexology</strong><br>
+                        <span style="font-size: 14px;">미국 조선업 관련 법안들의 주요 내용 및 시사점</span>
+                    </a>
+                    <a href="https://www.ebn.co.kr/news/articleView.html?idxno=1667842" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #f5576c;">이비엔(EBN)</strong><br>
+                        <span style="font-size: 14px;">'존스법 흔들리자'…조선 빅2, 美 시장 뚫는다</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="emphasis-box">
+                <h3>교훈</h3>
+                <p><strong>한 나라의 탁월성이 동맹국의 법까지 바꿨습니다.</strong></p>
+                <p>이것이 바로 글로컬(Glocal)입니다: 지역에서 시작된 탁월성이 세계 표준이 됩니다.</p>
+            </div>
+
+            <h3>증거 3: 알제리 사막 농업 - 기술이 형제 국가를 만들다</h3>
+            
+            <!-- 이미지 섹션 -->
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center;">
+                <div style="background: #e9ecef; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 10px; margin-bottom: 15px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 80px; margin-bottom: 10px;">🥔</div>
+                        <p style="color: #6c757d; font-size: 14px; margin: 0;">알제리 감자밭</p>
+                        <p style="color: #6c757d; font-size: 12px; margin: 5px 0 0 0;">한국 기술로 사막에서 자라는 감자</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>상황:</strong> 알제리는 국토의 80% 이상이 사막이었고, 식량자급률이 낮았습니다.</p>
+            
+            <p><strong>한 기술의 전파:</strong> 2007년, 한국이 '무병묘 수경재배 기술'을 무상으로 도입시켰습니다.</p>
+            
+            <p><strong>변화:</strong></p>
+            <ul>
+                <li>감자 생산량이 이전의 <strong>3배 이상</strong> 증가</li>
+                <li>연간 약 <strong>1조 9천억 원</strong> 규모의 경제적 효과</li>
+                <li>알제리 정부가 한국 기술진을 <strong>군과 경찰이 경호</strong></li>
+                <li>양국 관계가 <strong>'형제국'</strong>으로 발전</li>
+                <li>알제리 농가들이 수확기마다 <strong>한국 국기를 게양</strong></li>
+            </ul>
+
+            <!-- 관련 기사 링크 카드 -->
+            <div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); padding: 25px; border-radius: 15px; margin: 30px 0;">
+                <h4 style="color: #2c3e50; margin: 0 0 15px 0; font-size: 18px;">📰 관련 기사 더보기</h4>
+                <div style="display: grid; gap: 10px;">
+                    <a href="https://www.korea.kr/briefing/policyBriefingView.do?newsId=148726838" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #fa709a;">대한민국 정책브리핑</strong><br>
+                        <span style="font-size: 14px;">아프리카를 감동시킨 한국형 씨감자 생산 기술</span>
+                    </a>
+                    <a href="https://biz.heraldcorp.com/article/10187021" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #fa709a;">헤럴드경제</strong><br>
+                        <span style="font-size: 14px;">한국형 씨감자 기술이 … 알제리를 먹여살린다</span>
+                    </a>
+                    <a href="https://science.ytn.co.kr/program/view.php?mcd=0082&key=202406211107397498" target="_blank" style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; text-decoration: none; color: #2c3e50; display: block;">
+                        <strong style="color: #fa709a;">YTN 사이언스</strong><br>
+                        <span style="font-size: 14px;">감자 전래 200주년...세계에 수출하는 'K-씨감자'</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="emphasis-box">
+                <h3>교훈</h3>
+                <p><strong>한 기술이 관계를 형성했습니다.</strong></p>
+                <p>이것은 단순한 기술 이전이 아니었습니다. 이것은 한 나라의 생존 기반을 바꾼 <strong>형제애</strong>였습니다.</p>
+            </div>
+
+            <h3>증거 4 & 5: SPG 감속기와 삼성 AI - 세계 표준이 된 탁월성</h3>
+
+            <p>시간 관계상 간략히 말씀드리겠습니다:</p>
+            
+            <ul>
+                <li><strong>SPG 감속기:</strong> 로봇의 세 가지 관절을 모두 상업화한 기업은 전 세계에서 한국의 SPG가 유일합니다. 정밀함이 세계 표준이 되었습니다.</li>
+                <li><strong>삼성 AI:</strong> 삼성은 개방과 협력으로 애플을 제치고 AI 반도체 시장 1위를 유지하고 있습니다. 협력이 산업을 재편했습니다.</li>
+            </ul>
+
+            <h3>종합: 5가지 사례가 말하는 것</h3>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">한 사람 (권순영)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">한 나라 (한국 조선)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">한 기술 (사막 농업)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">한 기업 (SPG, 삼성)</div>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-size: 24px; font-weight: 700; margin-top: 40px;">
+                = 세상을 변화시킨 힘
+            </p>
+
+            <blockquote style="font-size: 24px; font-weight: 700; text-align: center;">
+                "한 사람이 변화되면 세상이 변화된다"는 것은<br>
+                추상적인 슬로건이 아닙니다.<br>
+                <strong>이것은 21세기 현실입니다.</strong>
+            </blockquote>
+        </section>
+
+        <!-- 5부작 시리즈 소개 -->
+        <section id="series">
+            <h2>다음 5주간의 여정: 5부작 시리즈 예고</h2>
+
+            <p>오늘 우리는 30분간 마태의 이야기와 5가지 현대 사례를 빠르게 살펴보았습니다. 그러나 이것은 시작에 불과합니다.</p>
+
+            <p><strong>다음 5주간, 우리는 각 주제를 깊이 파고들 것입니다.</strong> 각 설교는 40-50분 분량으로, 성경적 원리와 현대 사례, 그리고 글로컬브릿지 사역 적용을 통합할 것입니다.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-title">발견: "버려진 자리에서 보석을 발견하라"</div>
+                    <div class="timeline-keyword">연결성 (Connectivity)</div>
+                    <p><strong>본문:</strong> 마태복음 9:9 "예수께서... 마태를 보시고"</p>
+                    <p><strong>핵심 질문:</strong> 어떻게 이주민의 잠재력을 발견할 것인가?</p>
+                    <ul>
+                        <li>마태 이야기: 세관에 앉은 자를 보신 예수님</li>
+                        <li>권순영 박사: 사막에서 경작지를 본 농업 전문가</li>
+                        <li>글로컬브릿지: elimg.com 플랫폼으로 56개국 이주민 연결</li>
+                    </ul>
+                    <p><strong>실천 과제:</strong> 이주민 1명의 이름을 부르며 "당신 안의 하나님 형상" 발견하기</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-title">초대: "나를 따르라: 정체성 변화의 초대"</div>
+                    <div class="timeline-keyword">지속성 (Sustainability)</div>
+                    <p><strong>본문:</strong> 마태복음 9:9 "내게 따르라 하시니"</p>
+                    <p><strong>핵심 질문:</strong> 어떻게 지속가능한 사역을 만들 것인가?</p>
+                    <ul>
+                        <li>마태 이야기: 왕의 명령과 새로운 정체성</li>
+                        <li>알제리 사례: 한국이 알제리를 형제 국가로 초대</li>
+                        <li>글로컬브릿지: BAM 전략과 56개 교회 연합 모델</li>
+                    </ul>
+                    <p><strong>실천 과제:</strong> "당신은 글로컬 인재입니다" 선포하기</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-title">변화: "일어나 따르니라: 즉각적 순종의 기적"</div>
+                    <div class="timeline-keyword">성장 (Growth)</div>
+                    <p><strong>본문:</strong> 마태복음 9:9 "일어나 따르니라"</p>
+                    <p><strong>핵심 질문:</strong> 어떻게 글로컬 인재를 양성할 것인가?</p>
+                    <ul>
+                        <li>마태 이야기: 즉시 일어난 순종</li>
+                        <li>한국 조선 & SPG: 세계 유일 기술의 탁월성</li>
+                        <li>글로컬브릿지: 한국어 → 기술 → 리더십 3단계 교육</li>
+                    </ul>
+                    <p><strong>실천 과제:</strong> 1명의 이주민과 성장 목표 설정하기</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-title">확장: "마태의 잔치: 네트워크 효과의 폭발"</div>
+                    <div class="timeline-keyword">확장성 (Scalability)</div>
+                    <p><strong>본문:</strong> 마태복음 9:10 "많은 세리와 죄인들이 와서"</p>
+                    <p><strong>핵심 질문:</strong> 어떻게 1명에서 56개 교회로 확장할 것인가?</p>
+                    <ul>
+                        <li>마태 이야기: 잔치를 열어 네트워크 확장</li>
+                        <li>삼성-오픈AI: 개방과 협력이 산업 재편</li>
+                        <li>글로컬브릿지: 허브-앤-스포크 구조로 전국 확산</li>
+                    </ul>
+                    <p><strong>실천 과제:</strong> "마태의 잔치" 이주민 초청 행사 열기</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-title">유산: "마태복음을 쓴 마태: 시대를 넘는 영향력"</div>
+                    <div class="timeline-keyword">탁월성 (Excellence)</div>
+                    <p><strong>본문:</strong> 마태복음 28:19-20 "모든 민족을 제자로 삼아"</p>
+                    <p><strong>핵심 질문:</strong> 어떻게 세계 표준이 되는 사역을 만들 것인가?</p>
+                    <ul>
+                        <li>마태 이야기: 2000년을 넘은 마태복음</li>
+                        <li>5가지 한국 기술: 세계 표준이 된 탁월성</li>
+                        <li>글로컬브릿지: 21세기 이주민 사역의 세계 모델</li>
+                    </ul>
+                    <p><strong>실천 과제:</strong> "당신도 마태처럼 유산을 남길 수 있습니다"</p>
+                </div>
+            </div>
+
+            <div class="emphasis-box">
+                <h3>5부작 통합 메시지</h3>
+                <p style="font-size: 20px; text-align: center; margin: 20px 0;">
+                    <strong>한 사람 발견 (1부) → 정체성 부여 (2부) → 역량 개발 (3부) →<br>
+                    네트워크 확장 (4부) → 세계 표준 (5부)</strong>
+                </p>
+                <p style="text-align: center;">
+                    이것이 <strong>마태의 여정</strong>이고,<br>
+                    이것이 <strong>권순영 박사의 여정</strong>이며,<br>
+                    이것이 <strong>글로컬브릿지가 걸어갈 길</strong>입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 실천 과제 -->
+        <section id="action">
+            <h2>결론: 오늘 당신이 할 수 있는 일</h2>
+
+            <p>지난 30분간 우리는 놀라운 여정을 함께했습니다:</p>
+            <ul>
+                <li>우리는 <strong>마태의 변화</strong>를 보았습니다</li>
+                <li>우리는 <strong>5가지 현대 사례</strong>를 목격했습니다</li>
+                <li>우리는 <strong>5부작 시리즈의 청사진</strong>을 미리 보았습니다</li>
+            </ul>
+
+            <p>이제 가장 중요한 질문이 남았습니다:</p>
+
+            <blockquote style="font-size: 28px; font-weight: 700;">
+                "그래서 나는 무엇을 해야 하는가?"
+            </blockquote>
+
+            <h3>3가지 실천 과제</h3>
+
+            <div class="emphasis-box">
+                <h3>1. 발견하십시오 (이번 주)</h3>
+                <p><strong>과제:</strong> 당신이 섬기는 이주민 1명의 이름을 부르며 기도하십시오.</p>
+                <p>"하나님, 이 사람 안에 있는 당신의 형상을 보게 해주세요. 이 사람이 어떻게 세상을 변화시킬 수 있는지 보여주세요."</p>
+            </div>
+
+            <div class="emphasis-box">
+                <h3>2. 연결하십시오 (이번 달)</h3>
+                <p><strong>과제:</strong> elimg.com 플랫폼에 우리 교회/사역을 등록하십시오.</p>
+                <p>56개 교회 연합 네트워크에 참여하여, 혼자서는 할 수 없었던 위대한 일을 함께 시작하십시오.</p>
+            </div>
+
+            <div class="emphasis-box">
+                <h3>3. 준비하십시오 (다음 5주)</h3>
+                <p><strong>과제:</strong> 다음 5주간의 5부작 시리즈를 위해 마음을 준비하십시오.</p>
+                <p>각 설교 후에는 구체적인 실천 과제가 주어질 것입니다. 이것은 단순한 설교 시리즈가 아닙니다. 이것은 <strong>글로컬 인재 양성 훈련</strong>입니다.</p>
+            </div>
+
+            <h3>마지막 말씀</h3>
+
+            <p>사역자 여러분,</p>
+
+            <p>마태는 세리였지만 제자가 되었습니다. 권순영 박사는 농업 전문가였지만 국가 구원자가 되었습니다. 한국 조선 기술은 작은 나라의 기술이었지만 미국 연방법을 바꿨습니다.</p>
+
+            <p><strong>당신이 섬기는 이주민도 그렇게 될 수 있습니다.</strong></p>
+
+            <blockquote style="font-size: 24px; font-weight: 700; text-align: center;">
+                "한 사람이 변화되면 세상이 변화된다"<br><br>
+                이것은 희망 사항이 아닙니다.<br>
+                <strong>이것은 하나님 나라의 법칙입니다.</strong>
+            </blockquote>
+
+            <p style="text-align: center; font-size: 20px; margin-top: 40px;">
+                예수님께서 지금 여러분을 부르십니다:<br>
+                <strong>"나를 따르라. 그리고 세상을 변화시키라."</strong>
+            </p>
+
+            <h3>기도</h3>
+
+            <div style="background: #ecf0f1; padding: 30px; border-radius: 10px; border-left: 5px solid #3498db; margin-top: 40px;">
+                <p><strong>사랑하는 하나님 아버지,</strong></p>
+                
+                <p>오늘 우리에게 마태의 이야기를 통해<br>
+                한 사람의 변화가 세상을 변화시킨다는 진리를 깨닫게 하셨습니다.</p>
+                
+                <p>권순영 박사처럼, 한국 기술자들처럼,<br>
+                우리도 하나님께서 주신 은사와 역량을<br>
+                하나님 나라 확장을 위해 사용하게 하옵소서.</p>
+                
+                <p>특별히 <strong>글로컬브릿지 사역</strong>을 통해:<br>
+                - 이주민들이 단순한 도움의 대상이 아닌 <strong>글로컬 인재</strong>로 세워지고<br>
+                - 56개 교회가 연합하여 <strong>협력의 기적</strong>을 만들어내며<br>
+                - elimg.com 플랫폼이 <strong>18개국 네트워크의 허브</strong>가 되게 하옵소서.</p>
+                
+                <p>우리가 변화되어,<br>
+                우리가 섬기는 이주민들이 변화되어,<br>
+                결국 온 세상이 변화되는<br>
+                그 놀라운 기적을 경험하게 하옵소서.</p>
+                
+                <p>예수님의 이름으로 기도합니다.<br>
+                <strong>아멘.</strong></p>
+            </div>
+        </section>
+
+        <!-- CTA 섹션 -->
+        <div class="cta-section">
+            <h2 style="color: white; font-size: 42px; margin-bottom: 20px;">다음 5주간 함께하시겠습니까?</h2>
+            <p style="font-size: 22px; margin-bottom: 30px;">매주 일요일, 우리는 함께 한 사람의 변화가 세상을 바꾸는 기적을 목격할 것입니다.</p>
+            <a href="#series" class="cta-button">5부작 시리즈 자세히 보기</a>
+            <p style="margin-top: 40px; font-size: 18px; opacity: 0.9;">
+                제1부 "발견" 설교는 다음 주일에 시작됩니다.<br>
+                글로컬브릿지 사역에 관심이 있으시다면 elimg.com을 방문하세요.
+            </p>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <p style="font-size: 18px; margin-bottom: 10px;"><strong>글로컬브릿지 사역</strong></p>
+            <p style="font-size: 14px; opacity: 0.8;">한 사람이 변화되면 세상이 변화된다</p>
+            
+            <!-- 작성자 정보 -->
+            <div style="margin: 30px 0; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                <p style="font-size: 16px; margin-bottom: 5px;"><strong>설교자</strong></p>
+                <p style="font-size: 18px; font-weight: 600; margin: 5px 0;">한진준 목사</p>
+                <p style="font-size: 14px; opacity: 0.9; margin: 5px 0;">
+                    <a href="tel:010-2083-3106" style="color: #ffd700; text-decoration: none;">📞 010-2083-3106</a>
+                </p>
+                <p style="font-size: 13px; opacity: 0.8; margin-top: 10px;">엘림G선교회 · 글로컬브릿지 대표</p>
+            </div>
+            
+            <p style="font-size: 14px; margin-top: 20px; opacity: 0.7;">© 2025 Glocal Bridge Ministry. All rights reserved.</p>
+            <p style="font-size: 14px; margin-top: 10px;">
+                <a href="http://elimg.com" target="_blank" style="color: #3498db; text-decoration: none;">elimg.com</a> | 
+                <a href="mailto:contact@glocalbridge.org" style="color: #3498db; text-decoration: none;">contact@glocalbridge.org</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 스크롤 애니메이션
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .timeline-item, .stat-card, .emphasis-box').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
